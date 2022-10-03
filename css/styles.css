@@ -21,6 +21,11 @@
     font-family: 'Shrikhand';
   }
 
+  article span{
+    font-family: 'Roboto', georgia;
+    font-size: 15px;
+  }
+
   header {
     display:flex;
     margin-bottom: 5px;
