@@ -5,6 +5,7 @@
   body {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
+    /*background-color: #eeecec;*/
   }
 
   h1 {
@@ -33,6 +34,7 @@
     display:flex;
     margin-bottom: 5px;
     position: relative;
+    background-color: white;
     
   }
 
@@ -69,6 +71,10 @@ main img {
 
 .description-menu{
     background-color: #eeecec; 
+    position:relative;
+    top : -60px;
+    bottom: 60px;
+    border-radius:  60px 60px 0 0px;
 }
 
 h2{
@@ -215,18 +221,30 @@ h1,h2 {
    }
 
 
+   main{
+    position:relative;
+   }
+
    footer{
     background-color: rgb(68, 67, 67);
     color:white;
     padding-bottom: 20px;
+    font-size: 15px;
+    position:absolute;
+    top:760px;
+    width: 100%;
+
   }
   
   footer a {
     color:white;
+    text-decoration: none;
+
   }
   
   footer li{
     list-style: none;
+    text-decoration: none;
     margin-bottom: 5px;
   }
   
@@ -263,7 +281,26 @@ h1,h2 {
 }
 
 
+.coeur2 i {
+  color:  #FF79DA;
+}
 
+
+.coeur2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*background-color: darken(#9356DC, 5);*/
+  /*z-index: -1;*/
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.coeur-principal:hover .coeur2{
+      opacity: 1;
+}
 
 
 .ordre{
@@ -280,6 +317,30 @@ h1,h2 {
 
 .ordre3{
     animation-delay: 700ms;
+}
+
+.ordre4{
+  animation-delay: 1200ms;
+}
+
+.ordre5{
+  animation-delay: 1700ms;
+}
+
+.ordre6{
+  animation-delay: 2200ms;
+}
+
+.ordre7{
+  animation-delay: 2700ms;
+}
+
+.ordre8{
+  animation-delay: 3200ms;
+}
+
+.ordre9{
+  animation-delay: 3700ms;
 }
 
 
@@ -328,9 +389,12 @@ transform: scaleY(1);
         margin-left: 25%;
         margin-right: 25%;
       }
+
+      
     
       footer h1{
-        padding-left: 47%;
+
+        padding-left: 42%;
       }
 
   }

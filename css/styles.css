@@ -71,19 +71,52 @@ header img {
   margin-bottom: 10px;
 }
 
-.presentation div{
-  background: linear-gradient(#FF79DA,#9356DC);
-  color:rgb(255, 255, 255);
-  border-radius: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width : 250px;
-  margin: auto;
-}
 
 .presentation .span2{
   font-family: 'roboto';
   font-size: 22px;
+}
+
+.presentation2{
+  text-align: center;
+   padding-top:20px;
+   background-color: #f0eeee;
+   padding-bottom: 40px;
+ }
+ 
+ .presentation2 div{
+   background: linear-gradient(#FF79DA,#9356DC);
+   color:rgb(255, 255, 255);
+   border-radius: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   width : 250px;
+   margin: auto;
+ }
+
+.btn{
+  position: relative;
+  z-index: 1;
+}
+
+::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*background-color: darken(#9356DC, 5);*/
+  background-color: rgb(194, 138, 138);
+  border-radius: 15px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 250ms;
+
+}
+
+.btn:hover::after {
+  opacity: 1;
 }
 
 .fonctionnement{
@@ -198,6 +231,7 @@ footer{
   background-color: rgb(68, 67, 67);
   color:white;
   padding-bottom: 20px;
+  font-size: 15px;
 }
 
 footer a {
@@ -221,7 +255,7 @@ footer h1{
 
 
 .coeur2 i {
-  color:  rgb(124, 7, 7);;
+  color:  #FF79DA;
 }
 
 
