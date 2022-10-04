@@ -60,6 +60,7 @@ main img {
 .titre{
     display: flex;
     justify-content:space-between;
+    margin-right: 50px;
     position:relative;
 }
 
@@ -231,7 +232,7 @@ h1,h2 {
     padding-bottom: 20px;
     font-size: 15px;
     position:absolute;
-    top:760px;
+    top:1440px;
     width: 100%;
 
   }
@@ -281,6 +282,10 @@ h1,h2 {
 }
 
 
+.coeur-principal{
+  position: relative;
+}
+
 .coeur2 i {
   color:  #FF79DA;
 }
@@ -292,10 +297,12 @@ h1,h2 {
   right: 0;
   bottom: 0;
   left: 0;
+
   /*background-color: darken(#9356DC, 5);*/
   /*z-index: -1;*/
   opacity: 0;
   transition: opacity 250ms;
+
 }
 
 .coeur-principal:hover .coeur2{
@@ -390,7 +397,9 @@ transform: scaleY(1);
         margin-right: 25%;
       }
 
-      
+      footer{
+        top:760px;
+      }
     
       footer h1{
 
