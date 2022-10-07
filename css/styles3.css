@@ -1,0 +1,412 @@
+*{
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    /*background-color: #eeecec;*/
+  }
+
+  h1 {
+    font-family: 'Shrikhand', sans-serif;
+    margin-left: 15px;
+  }
+
+  h2,h3{
+    font-family: 'Shrikhand';
+  }
+
+  .description-menu-unite{
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 15px;
+  }
+
+  .descriptif-prix{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .gras{
+    font-weight: bold;
+  }
+
+  header {
+    display:flex;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: white;
+    
+  }
+
+  header i {
+    position: absolute;
+    left:10%;
+    top:50%;
+    font-size: 30px;
+  }
+
+header img {
+  margin:auto;
+  height: 50px;
+  margin-top: 30px;
+}
+
+main img {
+    height : 300px;
+    width:100%;
+    object-fit: cover;
+}
+
+.titre{
+    display: flex;
+    justify-content:space-between;
+    margin-right: 50px;
+    position:relative;
+}
+
+.titre i{
+    position:absolute;
+    top:40%;
+    right:10%;
+}
+
+.description-menu{
+    background-color: #eeecec; 
+    position:relative;
+    top : -60px;
+    bottom: 60px;
+    border-radius:  60px 60px 0 0px;
+}
+
+h2{
+    border-bottom: #99E2D0 solid;
+    width:60px;
+    margin-left: 10px;
+}
+
+
+
+.description-menu-unite {
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 4px 4px 4px #979696;
+    display:flex;
+    object-fit:inherit;
+}
+
+
+
+.description-menu-unite {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 90%;
+}
+
+.description{
+    width:100%;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.partition{
+  width:100%;
+}
+
+.descriptif-prix{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.check-green{
+    background-color: #99E2D0;
+    /*width:0%;
+    border-radius: 0 15px 15px 0;
+    transform:scaleX(0);*/
+
+    margin: -5px -100px -5px 10px;
+    /*width: 4rem;*/
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition-duration: 0.8s;
+    border-radius: 0 15px 15px 0;
+    width: 0%;
+    align-items: center;
+    justify-content: center;
+    transform: scaleX(0);
+}
+
+.description-menu-unite:hover> .check-green {
+
+  margin-right: -10px;
+  width : 25%;
+  transform: scaleX(1);
+
+
+           /* transform: scaleX(0);
+            animation-name: progress-green;
+            animation-duration: 500ms;
+            animation-fill-mode: forwards;
+            width: 7%;*/
+        }
+    
+
+.check-green i {
+
+    color: white;
+    font-size: 25px;
+    transform: rotate(180deg);
+    transition-duration: 0.8s;
+
+  /*padding-top: 25px;
+    padding-left: 25px;*/
+}
+
+.description-menu-unite:hover i {
+  transform: rotate(0);
+}
+
+.descriptif-prix span{
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+h3{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+h1,h2 {
+  margin-left: 30px;
+}
+
+.titre i {
+  font-size: 20px;
+}
+
+.descriptif-prix{
+    display : flex;
+    justify-content: space-between;
+}
+
+.presentation{
+    text-align: center;
+     padding-top:20px;
+     background-color: #f0eeee;
+     padding-bottom: 40px;
+   }
+   
+   .presentation div{
+     background: linear-gradient(#FF79DA,#9356DC);
+     color:rgb(255, 255, 255);
+     border-radius: 20px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     width : 250px;
+     margin: auto;
+   }
+
+
+   main{
+    position:relative;
+   }
+
+   footer{
+    background-color: rgb(68, 67, 67);
+    color:white;
+    padding-bottom: 20px;
+    font-size: 15px;
+    position:absolute;
+    top:1530px;
+    width: 100%;
+
+  }
+  
+  footer a {
+    color:white;
+    text-decoration: none;
+
+  }
+  
+  footer li{
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  footer h1{
+    font-size: 14px;
+    padding-top: 20px;
+  }
+
+
+
+.btn{
+  position: relative;
+  z-index: 1;
+}
+
+::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*background-color: darken(#9356DC, 5);*/
+    background-color: rgb(194, 138, 138);
+    border-radius: 15px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 250ms;
+
+}
+
+.btn:hover::after {
+        opacity: 1;
+}
+
+
+.coeur-principal{
+  position: relative;
+}
+
+.coeur2 i {
+  color:  #FF79DA;
+}
+
+
+.coeur2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /*background-color: darken(#9356DC, 5);*/
+  /*z-index: -1;*/
+  opacity: 0;
+  transition: opacity 250ms;
+
+}
+
+.coeur-principal:hover .coeur2{
+      opacity: 1;
+}
+
+
+.ordre{
+
+    transform: scaleY(0);
+    animation-name: progress-menu;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}   
+
+.ordre2{
+    animation-delay: 200ms;
+}
+
+.ordre3{
+    animation-delay: 700ms;
+}
+
+.ordre4{
+  animation-delay: 1200ms;
+}
+
+.ordre5{
+  animation-delay: 1700ms;
+}
+
+.ordre6{
+  animation-delay: 2200ms;
+}
+
+.ordre7{
+  animation-delay: 2700ms;
+}
+
+.ordre8{
+  animation-delay: 3200ms;
+}
+
+.ordre9{
+  animation-delay: 3700ms;
+}
+
+
+@keyframes progress-menu{
+0% {
+transform: scaleY(0);
+}
+100% {
+transform: scaleY(1);
+}
+}
+
+@keyframes progress-green{
+    0% {
+    transform: scaleX(0);
+    }
+    100% {
+    transform: scaleX(1);
+    }
+    }
+
+  @media screen and (min-width : 768px){
+
+    .description-menu-unite {
+        background-color: white;
+        margin-left: 15%;
+        margin-right: 15%;
+
+    }
+
+    .trois-sub-menus{
+       display: flex;
+    }
+
+    .partition{
+      width:30%;
+    }
+
+    h1,h2 {
+      margin-left: 70px;
+    }
+
+    footer ul{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 25%;
+        margin-right: 25%;
+      }
+
+      footer{
+        top:850px;
+      }
+    
+      footer h1{
+
+        padding-left: 42%;
+      }
+
+  }
+
+
+
