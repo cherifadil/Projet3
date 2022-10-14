@@ -28,6 +28,8 @@
 
   .gras{
     font-weight: bold;
+    text-overflow:unset;
+
   }
 
   header {
@@ -166,9 +168,9 @@ h2{
 .check-green i {
 
     color: white;
-    font-size: 25px;
+    font-size: 28px;
     transform: rotate(180deg);
-    transition-duration: 0.8s;
+    transition-duration: 1s;
 
   /*padding-top: 25px;
     padding-left: 25px;*/
@@ -178,11 +180,15 @@ h2{
   transform: rotate(0);
 }
 
-.descriptif-prix span{
+.elips{
     display: block;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.gras{
+  font-weight: bold;
 }
 
 h3{

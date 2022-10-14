@@ -304,23 +304,23 @@ $anim-delay: $anim-dur / $num-bars;
         background-color: #15DEA5;
         height: 45vh;
         width: 3vh;
-        animation: bars 1000ms backwards infinite ease-in-out alternate;
+        animation: bars 500ms backwards infinite ease-in-out alternate;
     }
 
   .load__bar--1 {
-      animation-delay: 200ms;
+      animation-delay: 100ms;
   }
   .load__bar--2 {
-      animation-delay: 400ms;
+      animation-delay: 200ms;
   }
   .load__bar--3 {
-      animation-delay: 600ms;
+      animation-delay: 300ms;
   }
   .load__bar--4 {
-      animation-delay: 800ms;
+      animation-delay: 400ms;
   }
   .load__bar--5 {
-      animation-delay: 1000ms;
+      animation-delay: 500ms;
   }
 
   @keyframes bars {
@@ -344,7 +344,7 @@ $anim-delay: $anim-dur / $num-bars;
 
 
 .block-page {
-	animation: cat 0ms 2300ms both;
+	animation: cat 0ms 1300ms both;
 	/*width: 51vw;
 	height: 30vw;*/
 	position: absolute;
