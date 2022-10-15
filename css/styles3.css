@@ -206,9 +206,9 @@ h1,h2 {
 
 .presentation{
     text-align: center;
-     padding-top:20px;
+     padding-top:40px;
      background-color: #f0eeee;
-     padding-bottom: 40px;
+     padding-bottom: 20px;
    }
    
    .presentation div{
@@ -221,6 +221,12 @@ h1,h2 {
      margin: auto;
    }
 
+
+   #container{
+    position:relative;
+    background-color: #eeecec;
+
+   }
 
    main{
     position:relative;

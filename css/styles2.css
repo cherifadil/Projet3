@@ -212,9 +212,9 @@ h1,h2 {
 
 .presentation{
     text-align: center;
-     padding-top:20px;
+     padding-top:40px;
      background-color: #f0eeee;
-     padding-bottom: 40px;
+     padding-bottom: 20px;
    }
    
    .presentation div{
@@ -228,8 +228,10 @@ h1,h2 {
    }
 
 
-   main{
+   #container{
     position:relative;
+    background-color: #eeecec;
+
    }
 
    footer{
@@ -237,8 +239,8 @@ h1,h2 {
     color:white;
     padding-bottom: 20px;
     font-size: 15px;
-    position:absolute;
-    top:1440px;
+    /*position:absolute;*/
+    top:800px;
     width: 100%;
 
   }
