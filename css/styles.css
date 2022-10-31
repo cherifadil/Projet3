@@ -13,12 +13,15 @@
   }
 
   h1 {
-    font-family: 'Shrikhand';
+    /*font-family: 'Shrikhand';*/
+    font-family: 'Roboto';
     margin-left: 15px;
   }
 
   h2{
-    font-family: 'Shrikhand';
+    /*font-family: 'Shrikhand';*/
+    font-family: 'Roboto';
+    font-weight: bolder;
   }
 
   article span{
@@ -30,6 +33,8 @@
     display:flex;
     margin-bottom: 5px;
     background-color: white;
+    BOX-SHADOW: 0px 5px 0px #cac9c9;
+    padding-bottom: 3px;
     
   }
 
@@ -39,21 +44,26 @@ header img {
   margin-top: 30px;
 }
 
+.numero-fontionnement{
+  color: white;
+}
+
 .localisation{
-  background-color: #eeecec;
+  background-color: #ddd9d9;
   margin: auto;
   text-align: center;
   padding-top: 7px;
   padding-bottom: 7px;
-  border-top: solid #cac9c9;
-  border-bottom: solid #e4e1e1;
+  /*border-top: solid #cac9c9;
+  border-bottom: solid #e4e1e1;*/
   font-weight: bold;
+  box-shadow: inset 4px #741515;
 
 }
 
 .localisation i{
   color : #030303e1;
-  background-color: #eeecec;
+  background-color: #ddd9d9;
   font-size: 17px;
 }
 
@@ -65,9 +75,11 @@ header img {
 }
 
 .presentation span {
-  font-family: 'Shrikhand';
+  /*font-family: 'Shrikhand';*/
+  font-family: 'Roboto';
+  font-weight:bolder;
   display: block;
-  font-size: 22px;
+  font-size: 26px;
   margin-bottom: 10px;
 }
 
@@ -75,6 +87,7 @@ header img {
 .presentation .span2{
   font-family: 'roboto';
   font-size: 22px;
+  font-weight: lighter;
 }
 
 .presentation2{
@@ -84,7 +97,7 @@ header img {
    padding-bottom: 40px;
  }
  
- .presentation2 div{
+ .presentation2 button{
    background: linear-gradient(#FF79DA,#9356DC);
    color:rgb(255, 255, 255);
    border-radius: 20px;
@@ -92,6 +105,7 @@ header img {
    padding-bottom: 10px;
    width : 250px;
    margin: auto;
+   border : none;
  }
 
 .btn{
@@ -107,7 +121,9 @@ header img {
   bottom: 0;
   left: 0;
   /*background-color: darken(#9356DC, 5);*/
-  background-color: rgb(194, 138, 138);
+  /*background-color: rgb(255, 121, 218);*/
+  background-color:rgba(255,121,218,0.8);
+  box-shadow: 4px 4px 4px #979696;
   border-radius: 15px;
   z-index: -1;
   opacity: 0;
@@ -117,6 +133,7 @@ header img {
 
 .btn:hover::after {
   opacity: 1;
+
 }
 
 .fonctionnement{
@@ -171,7 +188,9 @@ article .article-description{
 
 .section-restaurant {
    background-color:#eeecec;
+   padding-bottom: 15px;
 }
+
 
 article {
   margin-left: 10%;
@@ -196,6 +215,10 @@ h2{
   margin:0px;
   padding-left:10px;
   padding-bottom: 10px;
+}
+
+.hh{
+  font-size: 25px;
 }
 
 article span {
@@ -227,6 +250,14 @@ a {
   text-decoration: none;
 }
 
+.block-page{
+  background-color:#eeecec;
+}
+
+.section-fonctionnement{
+  background-color:white;
+}
+
 footer{
   background-color: rgb(68, 67, 67);
   color:white;
@@ -255,7 +286,7 @@ footer h1{
 
 
 .coeur2 i {
-  color:  #FF79DA;
+  color:#9356DC;
 }
 
 
@@ -275,7 +306,13 @@ footer h1{
       opacity: 1;
 }
 
+.fonctionnement:hover i{
+  color:#9356DC;
+}
 
+.fonctionnement:hover{
+  background-color:#fcfafa;
+}
 
 
 
@@ -380,7 +417,9 @@ $anim-delay: $anim-dur / $num-bars;
 
 
 
-
+.div-fonctionnement{
+  padding-bottom: 50px;
+}
 
 
 
@@ -389,7 +428,7 @@ $anim-delay: $anim-dur / $num-bars;
   .div-fonctionnement{
     display:flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
   }
 
   .fonctionnement{
